@@ -8,7 +8,7 @@ const App: React.FC = () => (
   <BrowserRouter>
     <Menu fixed="top">
       <Menu.Header style={{ margin: "10px" }}>
-        <h3>Search App</h3>
+        <h3 data-test="appTitle">Search App</h3>
       </Menu.Header>
     </Menu>
     <Route exact path="/" component={Home} />

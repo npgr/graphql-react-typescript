@@ -9,8 +9,6 @@ describe("SearchForm Component", () => {
     wrapper = shallow(<SearchForm />);
   });
 
-  it("Should render without errors", () => {});
-
   it("Renders label City", () => {
     const cityLabel = <label>Location</label>;
     expect(wrapper.contains(cityLabel)).toBe(true);

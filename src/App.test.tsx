@@ -9,8 +9,8 @@ describe("App Component", () => {
   });
 
   it("Should render without errors", () => {
-    //shallow(<App />);
-    //const component = findByTestAtrr(wrapper, 'appComponent');
-    //expect(component.length).toBe(1);
+    //const wrapper = render(<App />)
+    console.log("wrapper=", wrapper);
+    expect(wrapper);
   });
 });
