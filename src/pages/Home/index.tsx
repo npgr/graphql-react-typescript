@@ -3,7 +3,7 @@ import SearchForm from "components/SearchForm";
 
 const Home: React.FC = () => (
   <div>
-    <SearchForm />
+    <SearchForm data-test="searchFormComponent" />
   </div>
 );
 
