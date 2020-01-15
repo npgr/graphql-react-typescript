@@ -1,18 +1,23 @@
 import React from "react";
-import { shallow } from "enzyme";
+import { shallow, ShallowWrapper } from "enzyme";
 import SearchForm from "./";
 import { findByDataTest } from "utils/tests";
 
 describe("SearchForm Component", () => {
-  // @ts-ignore: wrapper type
-  let wrapper;
+  let wrapper: ShallowWrapper;
   beforeEach(() => {
     wrapper = shallow(<SearchForm />);
   });
 
   it("Should render without errors", () => {});
+
+  it("Renders label City", () => {
+    const cityLabel = <label>City</label>;
+    expect(wrapper.contains(cityLabel)).toBe(true);
+    //expect(wrapper.contains(welcome)).toEqual(true);
+  });
+
   it("Should have an input field", () => {
-    //  @ts-ignore: wrapper type
     const component = findByDataTest(wrapper, "searchInput");
     expect(component.length).toBe(1);
   });
