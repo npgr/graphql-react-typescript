@@ -12,7 +12,7 @@ describe("SearchForm Component", () => {
   it("Should render without errors", () => {});
 
   it("Renders label City", () => {
-    const cityLabel = <label>City</label>;
+    const cityLabel = <label>Location</label>;
     expect(wrapper.contains(cityLabel)).toBe(true);
     //expect(wrapper.contains(welcome)).toEqual(true);
   });
