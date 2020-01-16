@@ -10,7 +10,7 @@ describe("App Component", () => {
 
   it("Should render without errors", () => {
     //const wrapper = render(<App />)
-    console.log("wrapper=", wrapper);
-    expect(wrapper);
+    //expect(wrapper);
+    expect(wrapper.length).toBe(1);
   });
 });
