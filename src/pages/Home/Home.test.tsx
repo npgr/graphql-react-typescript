@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow, ShallowWrapper } from "enzyme";
-import Home from "./";
-import { findByDataTest } from "utils/tests";
+import { Home } from "./";
+import { existOneDataTestId } from "test/utils";
 
 describe("Home Page", () => {
   let wrapper: ShallowWrapper;
@@ -9,9 +9,7 @@ describe("Home Page", () => {
     wrapper = shallow(<Home />);
   });
 
-  //it("Should render without errors", () => {});
-  it("Should have an search form component", () => {
-    const component = findByDataTest(wrapper, "searchFormComponent");
-    expect(component.length).toBe(1);
+  it("Should have a search form component", () => {
+    existOneDataTestId(wrapper, "searchFormComponent");
   });
 });

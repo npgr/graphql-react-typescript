@@ -1,7 +1,7 @@
 import React from "react";
 import { shallow, ShallowWrapper } from "enzyme";
-import SearchForm from "./";
-import { findByDataTest } from "utils/tests";
+import { SearchForm } from "./";
+import { existOneDataTestId } from "test/utils";
 
 describe("SearchForm Component", () => {
   let wrapper: ShallowWrapper;
@@ -16,7 +16,6 @@ describe("SearchForm Component", () => {
   });
 
   it("Should have an input field", () => {
-    const component = findByDataTest(wrapper, "searchInput");
-    expect(component.length).toBe(1);
+    existOneDataTestId(wrapper, "searchInput");
   });
 });
