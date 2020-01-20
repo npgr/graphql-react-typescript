@@ -1,18 +1,24 @@
 import React, { useState } from "react";
+//import { Link } from 'semantic-ui-react'
+import { Link } from "StyledComponents";
+import { Input } from "./style";
 
 const SearchForm: React.FC = () => {
-  const [location, setLocation] = useState<string>("");
-  const sendValue = () => console.log("sending", location);
+  const [searchValue, setSearchValue] = useState<string>("");
+  console.log("searchValue", searchValue);
   return (
     <>
-      <label>Location</label>
-      <input
+      <Input
         data-test="searchInput"
-        type="text"
-        onBlur={e => setLocation(e.target.value)}
-        defaultValue=""
+        //label='Search'
+        //size='big'
+        icon="search"
+        placeholder="Symbol or company name..."
+        onChange={(val: React.FormEvent<HTMLInputElement>) =>
+          setSearchValue(val.currentTarget.value)
+        }
       />
-      <button onClick={sendValue}>Go</button>
+      <Link left="10px">Advanced options</Link>
     </>
   );
 };

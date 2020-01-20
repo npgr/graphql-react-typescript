@@ -1,21 +1,32 @@
 import React from "react";
 import { shallow, ShallowWrapper } from "enzyme";
+import {
+  existOneDataTestId,
+  findByDataTestId,
+  existAttributeWithValue
+} from "test/utils";
 import { SearchForm } from "./";
-import { existOneDataTestId } from "test/utils";
 
+// data-test Ids
+const SEARCH_INPUT = "searchInput";
+
+// Tests
 describe("SearchForm Component", () => {
   let wrapper: ShallowWrapper;
   beforeEach(() => {
     wrapper = shallow(<SearchForm />);
   });
 
-  it("Renders label City", () => {
-    const cityLabel = <label>Location</label>;
-    expect(wrapper.contains(cityLabel)).toBe(true);
-    //expect(wrapper.contains(welcome)).toEqual(true);
+  it("Should have an input field", () => {
+    existOneDataTestId(wrapper, SEARCH_INPUT);
   });
 
-  it("Should have an input field", () => {
-    existOneDataTestId(wrapper, "searchInput");
+  it('Input must have a placeholder with text "Symbol or company name..."', () => {
+    const component = findByDataTestId(wrapper, SEARCH_INPUT);
+    existAttributeWithValue(
+      component,
+      "placeholder",
+      "Symbol or company name..."
+    );
   });
 });
