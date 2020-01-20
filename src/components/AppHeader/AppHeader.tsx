@@ -6,7 +6,7 @@ export default () => (
   <>
     <Menu fixed="top">
       <Menu.Header style={{ margin: "10px" }}>
-        <h3 data-test="appTitle">Search App</h3>
+        <h3 data-test="appTitle">Investment</h3>
       </Menu.Header>
       <Link to="/about">About</Link>
     </Menu>
