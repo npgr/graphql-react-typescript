@@ -3,9 +3,9 @@ import React, { useState } from "react";
 import { Link } from "StyledComponents";
 import { Input } from "./style";
 
-const SearchForm: React.FC = () => {
+const SearchForm: React.FC<{ theme?: object }> = ({ theme }) => {
   const [searchValue, setSearchValue] = useState<string>("");
-  console.log("searchValue", searchValue);
+
   return (
     <>
       <Input
