@@ -1,8 +1,22 @@
 {
+  "window.zoomLevel": -1,
+  "prettier.semi": false,
+  "prettier.jsxSingleQuote": true,
+  "editor.formatOnSave": true,
   "eslint.validate": [
     "javascript",
     "javascriptreact",
     { "language": "typescript", "autoFix": true },
     { "language": "typescriptreact", "autoFix": true }
-  ]
+  ],
+  "files.watcherExclude": {
+    "**/.git/**": true
+  },
+  "prettier.singleQuote": true,
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single",
+  "explorer.confirmDelete": false,
+  "editor.tabSize": 2,
+  "javascript.format.semicolons": "remove",
+  "typescript.format.semicolons": "remove"
 }
