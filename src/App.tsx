@@ -1,8 +1,8 @@
-import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-import { Container } from "semantic-ui-react";
-import { AppHeader } from "components/AppHeader";
-import { Home } from "pages/Home";
+import React from 'react'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { Container } from 'semantic-ui-react'
+import { AppHeader } from 'components/AppHeader'
+import { Home } from 'pages/Home'
 
 const App: React.FC = () => (
   <BrowserRouter>
@@ -18,6 +18,6 @@ const App: React.FC = () => (
       </Switch>
     </Container>
   </BrowserRouter>
-);
+)
 
-export default App;
+export default App
