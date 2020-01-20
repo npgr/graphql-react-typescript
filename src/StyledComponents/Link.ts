@@ -5,8 +5,8 @@ interface linkProps {
   //top?: string
 }
 
-export default styled.div`
-  ${({ left }: linkProps) => left && `margin-left: ${left}`};
+export default styled.div<linkProps>`
+  ${({ left }) => left && `margin-left: ${left}`};
   display: inline-block;
   color: ${({ theme }) => theme.colors.blue};
   cursor: pointer;
