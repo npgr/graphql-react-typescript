@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
     "@testing-library/user-event": "^7.2.1",
+    "@types/styled-components": "^4.4.2",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "husky": "^3.1.0",
@@ -20,6 +21,8 @@
     "react-styleguidist": "^10.3.2",
     "react-test-renderer": "^16.12.0",
     "semantic-ui-react": "^0.88.2",
+    "styled": "^1.0.0",
+    "styled-components": "^5.0.0",
     "typescript": "^3.7.3"
   },
   "lint-staged": {
