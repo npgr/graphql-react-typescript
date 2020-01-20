@@ -1,7 +1,7 @@
-import styled from "styled-components";
+import styled from 'styled-components'
 
 interface linkProps {
-  left?: string;
+  left?: string
   //top?: string
 }
 
@@ -13,4 +13,4 @@ export default styled.div<linkProps>`
   :hover {
     text-decoration: underline;
   }
-`;
+`

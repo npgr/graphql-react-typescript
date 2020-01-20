@@ -1,15 +1,15 @@
-import React from "react";
-import { shallow, ShallowWrapper } from "enzyme";
-import { Home } from "./";
-import { existOneDataTestId } from "test/utils";
+import React from 'react'
+import { shallow, ShallowWrapper } from 'enzyme'
+import { Home } from './'
+import { existOneDataTestId } from 'test/utils'
 
-describe("Home Page", () => {
-  let wrapper: ShallowWrapper;
+describe('Home Page', () => {
+  let wrapper: ShallowWrapper
   beforeEach(() => {
-    wrapper = shallow(<Home />);
-  });
+    wrapper = shallow(<Home />)
+  })
 
-  it("Should have a search form component", () => {
-    existOneDataTestId(wrapper, "searchFormComponent");
-  });
-});
+  it('Should have a search form component', () => {
+    existOneDataTestId(wrapper, 'searchFormComponent')
+  })
+})
